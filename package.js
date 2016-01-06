@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'galaxy-seo-package',
+  name: 'mdg:seo',
   version: '1.0.0',
   // Brief, one-line summary of the package.
-  summary: 'Use built-in SEO support for enabled apps.',
+  summary: 'Provide SEO support for enabled apps.',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/meteor/galaxy-seo-package',
   // By default, Meteor will default to using README.md for documentation.
