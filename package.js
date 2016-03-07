@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mdg:seo',
-  version: '1.0.0',
+  version: '1.0.1',
   // Brief, one-line summary of the package.
   summary: 'Provide SEO support for enabled apps.',
   // URL to the Git repository containing the source code for this package.
@@ -12,5 +12,5 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
-  api.imply('dfischer:prerenderio@1.0.4');
+  api.imply('dfischer:prerenderio@1.0.7');
 });
