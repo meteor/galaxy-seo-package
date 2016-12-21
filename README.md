@@ -8,4 +8,4 @@ support, run:
 
 to turn on the built-in Prerender.io integration.
 
-Internally, this package `implies` [dfischer:prerenderio](https://github.com/dfischer/meteor-prerenderio/), the SEO package recommended by the [Meteor Guide](http://guide.meteor.com/deployment.html#seo).
+Internally, this package `implies` [dferber:prerender](https://github.com/dferber90/meteor-prerender/), the SEO package recommended by the [Meteor Guide](http://guide.meteor.com/deployment.html#seo).
