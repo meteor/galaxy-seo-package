@@ -15,6 +15,6 @@ Package.onUse(function packageConfiguration(api) {
   api.use(['webapp'], 'server');
   api.export(['PrerenderIO'], 'server');
   api.versionsFrom('1.4');  // prerender-node requires Node 4
-  api.addFiles('server/prerender.js', 'server');
+  api.mainModule('server/prerender.js', 'server');
   api.addFiles('client/prerender.html', 'client');
 });
