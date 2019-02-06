@@ -1,4 +1,4 @@
-var prerenderio = Npm.require('prerender-node');
+PrerenderIO = Npm.require('prerender-node');
 var token;
 var serviceUrl;
 var protocol;
@@ -14,16 +14,16 @@ serviceUrl = process.env.PRERENDERIO_SERVICE_URL || serviceUrl;
 
 
 if (token) {
-  if (serviceUrl) prerenderio.set('prerenderServiceUrl', serviceUrl);
-  prerenderio.set('prerenderToken', token);
-  if (protocol) prerenderio.set('protocol', protocol);
+  if (serviceUrl) PrerenderIO.set('prerenderServiceUrl', serviceUrl);
+  PrerenderIO.set('prerenderToken', token);
+  if (protocol) PrerenderIO.set('protocol', protocol);
 
-  prerenderio.set('afterRender', function afterRender(error) {
+  PrerenderIO.set('afterRender', function afterRender(error) {
     if (error) {
       console.log('prerenderio error', error); // eslint-disable-line no-console
       return;
     }
   });
 
-  WebApp.rawConnectHandlers.use(prerenderio);
+  WebApp.rawConnectHandlers.use(PrerenderIO);
 }
