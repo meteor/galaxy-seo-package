@@ -10,6 +10,7 @@ Npm.depends({
 });
 
 Package.onUse(function packageConfiguration(api) {
+  api.use('modules');
   api.use(['templating'], 'client');
   api.use(['webapp'], 'server');
   api.export(['PrerenderIO'], 'server');
