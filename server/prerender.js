@@ -1,4 +1,4 @@
-var prerenderio = Npm.require('prerender-node');
+var prerenderio = exports.PrerenderIO = require('prerender-node');
 var token;
 var serviceUrl;
 var protocol;
