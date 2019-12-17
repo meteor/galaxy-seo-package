@@ -4,7 +4,6 @@ var serviceUrl;
 var protocol;
 var settings = Meteor.settings.PrerenderIO;
 
-
 token = process.env.PRERENDERIO_TOKEN || (settings && settings.token);
 protocol = process.env.PRERENDERIO_PROTOCOL || (settings && settings.protocol);
 
@@ -21,7 +20,6 @@ if (token) {
   prerenderio.set('afterRender', function afterRender(error) {
     if (error) {
       console.log('prerenderio error', error); // eslint-disable-line no-console
-      return;
     }
   });
 
