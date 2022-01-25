@@ -7,9 +7,7 @@ Makes use of the built-in SEO support in Galaxy. If your app qualifies for SEO s
 
 to turn on the built-in Prerender.io integration.  You may also use this package with non-Galaxy deployments if you configure it manually.
 
-This package is a thin wrapper around the [`prerender-node`](https://www.npmjs.com/package/prerender-node) npm module, which understands the configuration format used by Galaxy to provide apps with a complimentary Prerender.io account.  If you're not deploying to Galaxy, you may want to just use the npm module directly.
-
-This package is based on a package previously released by Dominik Ferber as [dferber:prerender](https://github.com/dferber90/meteor-prerender/) (and older versions of this package simply depended on that package).
+This package is a thin wrapper around the [`prerender-node`](https://www.npmjs.com/package/prerender-node) npm module, which understands the configuration format used by Meteor Cloud (Galaxy) to provide apps with a complimentary Prerender.io account.  If you're not deploying to Meteor Cloud (Galaxy), you may want to just use the npm module directly.
 
 ## Manual configuration (non-Galaxy users)
 
