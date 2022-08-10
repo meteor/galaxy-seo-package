@@ -16,8 +16,14 @@ In your settings.json file, include:
 ```
 {
   "PrerenderIO": {
+    # Required
+    "token": "yourtoken" # You need to provide anything here for local server support
+    # Optional
     "serviceUrl": "http://localhost:3033/",
-    "token": "yourtoken"
+    "forwardHeaders": true,
+    "serverRequestOptions": {},
+    "allowList": ["^/(\\?.+)?$", "/dashboard"],
+    "blockList": ["^/search"],
   }
 }
 ```
@@ -25,7 +31,18 @@ In your settings.json file, include:
 The `serviceURL` is optional and only used to test the Prerender server locally.
 Leave it out in your production configuration.
 
-*NOTICE*: You may also provide the above credentials using environment variables, namely `PRERENDERIO_TOKEN` and `PRERENDERIO_SERVICE_URL`. They precede the configuration from the settings file.
+See [Prerender-node customization](https://www.npmjs.com/package/prerender-node#customization) for more details
+about options.
+
+*NOTICE*: You may also provide the above settings using environment variables:
+* `PRERENDERIO_TOKEN`
+* `PRERENDERIO_SERVICE_URL="http://localhost:3033/"`
+* `PRERENDERIO_FORWARD_HEADERS="true"`
+* `PRERENDERIO_SERVER_REQUEST_OPTIONS="{}"`
+* `PRERENDERIO_ALLOW_LIST="[]"`
+* `PRERENDERIO_BLOCK_LIST="[]"`
+
+They precede the configuration from the settings file.
 
 ## Testing and Verifying
 There are two options to test whether Prerender is working or not.

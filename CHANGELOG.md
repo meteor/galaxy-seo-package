@@ -2,6 +2,7 @@
 
 ## 3.4.0
 - Update prerender-node to 3.5.0
+- Add support for missing prerender-node options: forwardHeaders, prerenderServerRequestOptions, whitelist and blocklist
 
 ## 3.3.0 (2022-01-25)
 - Update prerender-node to 3.4.1
