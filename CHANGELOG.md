@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 3.4.0
+- Update prerender-node to 3.5.0
+
 ## 3.3.0 (2022-01-25)
 - Update prerender-node to 3.4.1
 - Modernize code
