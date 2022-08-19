@@ -3,12 +3,12 @@
 Package.describe({
   name: 'mdg:seo',
   summary: 'Provide SEO support for enabled apps.',
-  version: '3.3.0',
+  version: '3.4.0',
   git: 'https://github.com/meteor/galaxy-seo-package',
 });
 
 Npm.depends({
-  'prerender-node': '3.4.1',
+  'prerender-node': '3.5.0',
 });
 
 Package.onUse(function packageConfiguration(api) {
