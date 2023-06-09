@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.5.0
+- Update prerender-node to 3.7.0
+- Add support for new Google user agent tokens: "Google-InspectionTool" and "Googlebot"
+  - Full user agent strings:
+    - Mobile: "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/W.X.Y.Z Mobile Safari/537.36 (compatible; Google-InspectionTool/1.0)"
+    - Desktop: "Mozilla/5.0 (compatible; Google-InspectionTool/1.0)"
+
 ## 3.4.0
 - Update prerender-node to 3.5.0
 - Add support for missing prerender-node options: forwardHeaders, prerenderServerRequestOptions, whitelist and blocklist
