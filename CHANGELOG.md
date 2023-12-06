@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 3.5.1 (2023-12-06)
+- Add support to Meteor v3.0.0
+
 ## 3.5.0 (2023-06-09)
 - Update prerender-node to 3.7.0
 - Add support for new Google user agent tokens: "Google-InspectionTool" and "Googlebot"

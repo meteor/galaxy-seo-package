@@ -3,7 +3,7 @@
 Package.describe({
   name: 'mdg:seo',
   summary: 'Provide SEO support for enabled apps.',
-  version: '3.5.0',
+  version: '3.5.1',
   git: 'https://github.com/meteor/galaxy-seo-package',
 });
 
@@ -12,7 +12,7 @@ Npm.depends({
 });
 
 Package.onUse(function packageConfiguration(api) {
-  api.versionsFrom('2.5.3');
+  api.versionsFrom(['2.5.3', '3.0-alpha.19']);
   api.use('ecmascript');
 
   api.use(['modules','webapp'], 'server');
