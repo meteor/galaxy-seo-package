@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 3.5.2 (2024-07-18)
+- Now rely on the official Meteor 3 
+
 ## 3.5.1 (2023-12-06)
 - Add support to Meteor v3.0.0
 
